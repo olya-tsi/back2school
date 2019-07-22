@@ -23,6 +23,44 @@
                 "isDefault": true
             },
             "dependsOn": "Create bin folder"
+        },
+        {
+            "type": "shell",
+            "label": "Week 2 assignment build: functions",
+            "command": "g++",
+            "args": [
+                "-g",
+                "Coursera-C++\\Course1\\ww2\\functions.cpp",
+                "-o",
+                "bin\\funcs.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": "Create bin folder",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "Week 2 assignment build: vector",
+            "command": "g++",
+            "args": [
+                "-g",
+                "Coursera-C++\\Course1\\ww2\\vectors.cpp",
+                "-o",
+                "bin\\vec.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": "Create bin folder",
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
     ]
 }
